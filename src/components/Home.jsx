@@ -7,7 +7,7 @@ export default function Home() {
       <div className="relative container mx-auto p-4 text-white text-center pt-20">
         <img
           className="rounded-md w-[200px] mt-14 mx-auto"
-          src="../public/kucing.jpeg"
+          src="/kucing.jpeg"
           alt="pp"
         />
         <h1 className="font-bold mt-3">Hello Guys👋, My name is</h1>
