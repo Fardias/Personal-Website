@@ -11,18 +11,18 @@ export default function Navbar() {
   }
   return (
     <>
-      <div className="container mx-auto fixed w-full bg-slate-800 text-white p-4 flex justify-between items-center text-2xl z-50 border-b-2">
+      <div className="container mx-auto fixed w-full bg-slate-800 text-white p-4 flex justify-between items-center text-2xl z-[500] border-b-2 xl:px-20">
         <a href="/" className="font-bold z-20 ">
           FARALF
         </a>
-        <BiMenuAltRight className="z-20 hover:opacity-50" onClick={handleNav} />
+        <BiMenuAltRight className="z-20 hover:opacity-50 md:hidden" onClick={handleNav} />
 
         {/* menu for mobile device */}
         <ul
           className={
             nav
-              ? "text-white opacity-100 absolute py-2 bg-slate-800 border-b-2 right-[0px] min-h-screen w-full top-0 flex flex-col space-y-10 text-[20px] text-center font-semibold items-center pt-32 transition-all duration-300 ease-in z-10"
-              : "text-white opacity-0 absolute py-2 bg-slate-800 border-b-2 -right-[700px] min-h-screen w-full top-0 flex flex-col space-y-10 text-[20px] text-center font-semibold items-center pt-32 transition-all duration-300 ease-in z-10"
+              ? "text-white opacity-100 absolute py-2 bg-slate-800 border-b-2 right-[0px] min-h-screen w-full top-0 flex flex-col space-y-10 text-[20px] text-center font-semibold items-center pt-32 transition-all duration-300 ease-in z-10 md:hidden"
+              : "text-white opacity-0 absolute py-2 bg-slate-800 border-b-2 -right-[700px] min-h-screen w-full top-0 flex flex-col space-y-10 text-[20px] text-center font-semibold items-center pt-32 transition-all duration-300 ease-in z-10 md:hidden"
           }
         >
           <Menu onClick={handleNav} title="Home" href="#home" />
@@ -30,6 +30,15 @@ export default function Navbar() {
           <Menu onClick={handleNav} title="Skill" href="#skill" />
           <Menu onClick={handleNav} title="Project" href="#project" />
           <Menu onClick={handleNav} title="Contact" href="#contact" />
+        </ul>
+
+        {/* menu for tablet */}
+        <ul className="hidden md:flex gap-5 text-base">
+          <Menu title="Home" href="#home" />
+          <Menu title="About" href="#about" />
+          <Menu title="Skill" href="#skill" />
+          <Menu title="Project" href="#project" />
+          <Menu title="Contact" href="#contact" />
         </ul>
       </div>
     </>
