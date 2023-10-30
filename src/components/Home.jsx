@@ -6,13 +6,13 @@ export default function Home() {
     <div id="home">
       <div className="relative container mx-auto p-4 text-white text-center pt-20">
         <img
-          className="rounded-md w-[200px] mt-14 mx-auto"
-          src="/kucing.jpeg"
-          alt="pp"
+          className="w-[200px] mt-14 mx-auto rounded-full"
+          src="/home.jpeg"
+          alt="home"
         />
-        <h1 className="font-bold mt-3">Hello Guys👋, My name is</h1>
+        <h1 className="font-bold mt-3 text-slate-300">Hello Guys👋, My name is</h1>
         <h1 className="font-bold text-2xl uppercase">Fardias Alfathan</h1>
-        <h1 className="font-bold">And I am a</h1>
+        <h1 className="font-bold text-slate-200">And I am a</h1>
         {/* <h1 >Front End Web Developer</h1> */}
         <TypeAnimation
           className="font-bold text-2xl uppercase"
