@@ -6,7 +6,12 @@ import { Tailwind } from "./icon/Tailwind";
 export default function Skill() {
   return (
     <div id="skill">
-      <div className="relative container mx-auto p-4 text-white text-center pt-20 md:px-[200px] xl:px-[500px]">
+      <div
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+        className="relative container mx-auto p-4 text-white text-center pt-20 md:px-[200px] xl:px-[500px]"
+      >
         <h1 className="font-bold text-2xl uppercase mb-5 lg:text-3xl">
           My Skills
         </h1>

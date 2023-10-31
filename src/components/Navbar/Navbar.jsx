@@ -1,4 +1,5 @@
 import { BiMenuAltRight } from "react-icons/bi";
+import { IoCloseSharp } from "react-icons/io5";
 import Menu from "./Menu";
 import { useState } from "react";
 export default function Navbar() {
@@ -15,8 +16,17 @@ export default function Navbar() {
         <a href="/" className="font-bold z-20 ">
           FARALF
         </a>
-        <BiMenuAltRight className="z-20 hover:opacity-50 md:hidden" onClick={handleNav} />
-
+        {nav ? (
+          <IoCloseSharp
+            onClick={handleNav}
+            className="text-3xl z-20 first-letter:transition-all duration-300 ease-in"
+          />
+        ) : (
+          <BiMenuAltRight
+            onClick={handleNav}
+            className="text-3xl z-20 first-letter:transition-all duration-300 ease-in"
+          />
+        )}
         {/* menu for mobile device */}
         <ul
           className={
