@@ -5,7 +5,7 @@ import { Tailwind } from "./icon/Tailwind";
 
 export default function Skill() {
   return (
-    <div id="skill">
+    <div id="skill" className="xl:mt-14">
       <div
         data-aos="flip-left"
         data-aos-easing="ease-out-cubic"

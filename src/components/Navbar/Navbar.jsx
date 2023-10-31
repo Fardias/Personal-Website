@@ -19,12 +19,12 @@ export default function Navbar() {
         {nav ? (
           <IoCloseSharp
             onClick={handleNav}
-            className="text-3xl z-20 first-letter:transition-all duration-300 ease-in"
+            className="text-3xl z-20 first-letter:transition-all duration-300 ease-in md:hidden"
           />
         ) : (
           <BiMenuAltRight
             onClick={handleNav}
-            className="text-3xl z-20 first-letter:transition-all duration-300 ease-in"
+            className="text-3xl z-20 first-letter:transition-all duration-300 ease-in md:hidden"
           />
         )}
         {/* menu for mobile device */}
