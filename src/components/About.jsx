@@ -1,7 +1,7 @@
 export default function About() {
   return (
-    <div className="xl:px-[200px]">
-      <div id="about" className="mt-[150px] bg-slate-400 py-4 xl:py-0 xl:rounded-3xl xl:shadow-xl lg:pb-5">
+    <div id="about" className="xl:px-[200px] md:border-2 md:border-transparent  ">
+      <div className="mt-[150px] bg-slate-400 py-4 xl:py-0 xl:rounded-3xl xl:shadow-xl lg:pb-5 xl:mt-0 pt-12 md:pt-5">
         <div
           data-aos="fade-down"
           data-aos-delay="75"
