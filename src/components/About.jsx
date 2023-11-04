@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="xl:px-[100px] lg:max-w-[1600px] mx-auto md:border-2 md:border-transparent mt-28 md:mt-5 border-2 border-2-black"
+      className="xl:px-[100px] lg:max-w-[1600px] mx-auto md:border-2 md:border-transparent mt-28 md:mt-5"
     >
       <div className="mt-[150px] bg-slate-400 py-4 xl:py-0 xl:rounded-3xl xl:shadow-xl lg:pb-5 xl:mt-0 pt-12 md:pt-5">
         <div
