@@ -5,12 +5,12 @@ import { Tailwind } from "./icon/Tailwind";
 
 export default function Skill() {
   return (
-    <div id="skill" className="xl:mt-14">
+    <div id="skill" className="xl:mt-14 md:mt-16">
       <div
         data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="2000"
-        className="relative container mx-auto p-4 text-slate-800 text-center pt-20 md:px-[200px] xl:px-[500px]"
+        className="relative container mx-auto p-4 text-slate-800 text-center pt-20 md:px-[200px] xl:px-[300px] 2xl:px-[500px]"
       >
         <h1 className="font-bold text-2xl uppercase mb-5 lg:text-3xl">
           My Skills

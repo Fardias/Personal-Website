@@ -29,7 +29,7 @@ function App() {
   }, []); // Pass an empty dependency array to run the effect only once
   
   return (
-    <div className="mx-auto container relative">
+    <div className="relative">
       <Navbar />
       <Home />
       <About />
@@ -39,7 +39,7 @@ function App() {
       <Footer />
       <a
         ref={rocket}
-        className="opacity-0 inset-4transition-all duration-300 ease-in-out"
+        className="opacity-0 inset-4 transition-all duration-700 ease-in-out"
         href="#home"
       >
         <Rocket />

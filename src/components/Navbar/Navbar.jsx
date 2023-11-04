@@ -11,7 +11,7 @@ export default function Navbar() {
     body.classList.toggle("overflow-y-hidden");
   }
   return (
-    <div className="container mx-auto">
+    <div className="">
       <div className="fixed w-full bg-slate-800 text-white p-4 flex justify-between items-center text-2xl z-[500] border-b-2 xl:px-20">
         <a href="/" className="font-bold z-20 ">
           FARALF
